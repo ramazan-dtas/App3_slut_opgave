@@ -10,9 +10,9 @@ void main() {
 }
 
 class FirstScreen extends StatefulWidget {
-  final Aliens? selectedAnimal;
+  final Aliens? selectedAlien;
 
-  FirstScreen({this.selectedAnimal});
+  FirstScreen({this.selectedAlien});
 
   @override
   _FirstScreenState createState() {
