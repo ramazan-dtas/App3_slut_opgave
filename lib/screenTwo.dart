@@ -23,7 +23,15 @@ class _SecondScreenState extends State<SecondScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Second Screen')),
+      appBar: AppBar(
+        title: const Text('Second Screen'),
+        leading: BackButton(
+          onPressed: () {
+            _sendDataBack(context);
+          },
+          color: Colors.black,
+        ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

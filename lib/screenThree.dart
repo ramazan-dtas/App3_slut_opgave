@@ -21,7 +21,15 @@ class _ColorPickerState extends State<ColorPicker> {
   Widget build(BuildContext context) {
     return Scaffold(
         // The app bar with a title "Third Screen"
-        appBar: AppBar(title: const Text('Third Screen')),
+        appBar: AppBar(
+          title: const Text('Third Screen'),
+          leading: BackButton(
+            onPressed: () {
+              _sendColorBack(context);
+            },
+            color: Colors.black,
+          ),
+        ),
         // The body of the scaffold
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
